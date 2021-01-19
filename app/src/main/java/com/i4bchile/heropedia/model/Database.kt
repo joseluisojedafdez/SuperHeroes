@@ -1,4 +1,4 @@
-package com.i4bchile.superheroes.model
+package com.i4bchile.heropedia.model
 
 import android.app.Application
 import androidx.lifecycle.LiveData
@@ -7,7 +7,7 @@ import androidx.room.*
 @Dao
 interface SuperDao{
 
-    @Insert
+    @Insert(onConflict=OnConflictStrategy.REPLACE)
     suspend fun loadAllSuper(heroList:List<SuperHero>)
 
     @Query("SELECT * FROM superhero")
