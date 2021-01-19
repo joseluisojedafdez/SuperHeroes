@@ -2,14 +2,15 @@ package com.i4bchile.superheroes.model
 
 import androidx.room.Embedded
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName="superhero")
 data class SuperHero(
-        val id:Int,
+        @PrimaryKey val id:Int,
         val name:String,
         val slug:String,
         @Embedded val powerstats:PowerStats,
-        @Embedded val appearence:Appearence,
+        @Embedded val appearance:Appearence,
         @Embedded val biography:Biography,
         @Embedded val work:Work,
         @Embedded val connections:Connection,
@@ -33,18 +34,18 @@ data class Biography(
     val alterEgos:String,
     val aliases:List<String>,
     val placeOfBirth:String,
-    val firstAppearence:String,
-    val publisher:String,
-    val allignment:String
+    val firstAppearance:String,
+    val publisher:String?,
+    val alignment:String
 )
 
 data class Appearence (
         val gender:String,
-        val race: String,
-        val heigth: List<String>,
-        val weigth: List<String>,
-        val eyecolor:String,
-        val haircolor:String
+        val race: String?,
+        val height: List<String>,
+        val weight: List<String>,
+        val eyeColor:String,
+        val hairColor:String
         )
 
 data class PowerStats(
