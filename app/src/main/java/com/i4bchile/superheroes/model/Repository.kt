@@ -4,6 +4,9 @@ import android.util.Log
 
 class Repository{
 
+    val database=SuperApplication.superDatabase!!
+    val superList= database.superDao().getAllSuper()
+
     suspend fun getSuperHeroesfromApi(){
 
         val response=RetrofitClient.retrofitClient().getSuperHeroes()
@@ -12,6 +15,7 @@ class Repository{
 
             true -> { response.body()?.let{
                     Log.d("Repo", "getSuperHeroes con :${it.size} heroes ")
+                    database.superDao().loadAllSuper(it)
                 }}
 
             false-> {
