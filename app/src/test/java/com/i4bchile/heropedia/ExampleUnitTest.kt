@@ -1,4 +1,4 @@
-package com.i4bchile.superheroes
+package com.i4bchile.heropedia
 
 import org.junit.Test
 

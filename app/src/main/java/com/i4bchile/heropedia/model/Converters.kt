@@ -1,4 +1,4 @@
-package com.i4bchile.superheroes.model
+package com.i4bchile.heropedia.model
 
 import androidx.room.TypeConverter
 

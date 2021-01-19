@@ -1,10 +1,10 @@
-package com.i4bchile.superheroes.model
+package com.i4bchile.heropedia.model
 
 import android.util.Log
 
 class Repository{
 
-    val database=SuperApplication.superDatabase!!
+    private val database=SuperApplication.superDatabase!!
     val superList= database.superDao().getAllSuper()
 
     suspend fun getSuperHeroesfromApi(){

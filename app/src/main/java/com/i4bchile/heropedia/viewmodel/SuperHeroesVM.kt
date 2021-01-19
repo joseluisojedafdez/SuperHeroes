@@ -1,16 +1,15 @@
-package com.i4bchile.superheroes.viewmodel
+package com.i4bchile.heropedia.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.i4bchile.superheroes.model.Repository
+import com.i4bchile.heropedia.model.Repository
 import kotlinx.coroutines.launch
 
 class SuperHeroesVM: ViewModel() {
-    fun doSomething() {
-       //TODO: delete - > just to init the viewModel and test API
-    }
 
-    val repository=Repository()
+
+    private val repository=Repository()
+    val heroList=repository.superList
 
     init{
 

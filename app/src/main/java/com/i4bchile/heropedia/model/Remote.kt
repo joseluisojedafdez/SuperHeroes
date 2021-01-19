@@ -1,4 +1,4 @@
-package com.i4bchile.superheroes.model
+package com.i4bchile.heropedia.model
 
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -15,7 +15,7 @@ class RetrofitClient {
     companion object {
         private const val BASE_URL = "https://akabab.github.io/superhero-api/api/"
 
-        suspend fun retrofitClient(): APIHeroes {
+        fun retrofitClient(): APIHeroes {
             val retrofit = Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(
                     GsonConverterFactory.create()
             ).build()
