@@ -14,12 +14,12 @@ class Repository{
         when(response.isSuccessful){
 
             true -> { response.body()?.let{
-                    Log.d("Repo", "getSuperHeroes con :${it.size} heroes ")
+
                     database.superDao().loadAllSuper(it)
                 }}
 
             false-> {
-                Log.d("Repo", "getSuperHeroes: ${response.errorBody()}")
+
 
             }
         }
