@@ -13,12 +13,13 @@ interface SuperDao{
     @Query("SELECT * FROM superhero")
     fun getAllSuper(): LiveData<List<SuperHero>>
 
-    @Query("SELECT * FROM superhero WHERE id=:superId")
-    fun getSuper(superId:Int)
+    //@Query("SELECT * FROM superhero WHERE id=:superId")
+    //fun getSuper(superId:Int)
 
 }
 
 @Database(entities=[SuperHero::class], version=1)
+@TypeConverters(Converters::class)
 abstract class SuperDatabase: RoomDatabase() {
     abstract fun superDao():SuperDao
 }
