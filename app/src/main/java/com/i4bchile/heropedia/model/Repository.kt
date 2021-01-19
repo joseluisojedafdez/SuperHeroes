@@ -1,6 +1,6 @@
 package com.i4bchile.heropedia.model
 
-import android.util.Log
+
 
 class Repository{
 
@@ -19,8 +19,6 @@ class Repository{
                 }}
 
             false-> {
-
-
             }
         }
 
