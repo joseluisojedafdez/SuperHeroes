@@ -10,4 +10,6 @@
     <string name="appear">Appear</string>
     <string name="bio">Bio</string>
     <string name="other">Other</string>
+    <string name="good_or_bad">Good or Bad</string>
+    <string name="universe">Universe</string>
 </resources>

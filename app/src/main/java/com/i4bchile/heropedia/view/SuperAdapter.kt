@@ -43,6 +43,8 @@ class SuperVH(private val binding:ItemListSuperheroBinding):RecyclerView.ViewHol
     fun bind(superHero: SuperHero) {
         binding.tvHeroName.text=superHero.name
         binding.imageView.load(superHero.images.sm)
+        binding.tvHeroAlingment.text=superHero.biography.alignment.toUpperCase()
+        binding.tvUniverse.text=superHero.biography.publisher
 
     }
 
