@@ -81,26 +81,26 @@
         android:id="@+id/tv_place_of_birth_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="@string/place_of_birth_here"
-        app:layout_constraintStart_toStartOf="@+id/tv_aliases_value"
-        app:layout_constraintTop_toBottomOf="@+id/tv_aliases_value" />
+        app:layout_constraintStart_toStartOf="@+id/tv_place_of_birth_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_place_of_birth_label" />
 
     <TextView
         android:id="@+id/tv_first_appareance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textStyle="bold"
         android:text="@string/appeared_first_in"
-        app:layout_constraintStart_toStartOf="@+id/tv_place_of_birth_label"
-        app:layout_constraintTop_toBottomOf="@+id/tv_place_of_birth_label" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_place_of_birth_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_place_of_birth_value" />
 
     <TextView
         android:id="@+id/tv_first_appearance_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/appeared_first_value_here"
         app:layout_constraintStart_toStartOf="@+id/tv_first_appareance"
         app:layout_constraintTop_toBottomOf="@+id/tv_first_appareance" />
