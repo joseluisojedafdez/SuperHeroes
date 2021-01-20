@@ -2,4 +2,8 @@
     <string name="app_name">Heropedia</string>
     <string name="here_superhero_image">Here Superhero Image</string>
     <string name="here_superhero_name">Here Superhero Name</string>
+    <string name="here_superhero_image_large">Here SuperHero Image Large</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="intelligence_value">Intelligence Value</string>
+    <string name="hero_name_detail_here">Hero Name Detail Here</string>
 </resources>
