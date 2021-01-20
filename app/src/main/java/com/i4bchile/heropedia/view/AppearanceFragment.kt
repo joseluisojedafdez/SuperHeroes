@@ -23,6 +23,11 @@ class AppearanceFragment(id:Int): Fragment() {
         binding= FragmentAppearanceBinding.inflate(layoutInflater)
         viewModel.getHero(superId).observe(viewLifecycleOwner, {
             binding.tvHeigthValue.text=it.appearance.height[1]
+            binding.tvWeightValue.text=it.appearance.weight[1]
+            binding.tvGenderValue.text=it.appearance.gender
+            binding.tvRaceValue.text=it.appearance.race
+            binding.tvEyeValue.text=it.appearance.eyeColor
+            binding.tvHairValue.text=it.appearance.hairColor
         })
 
 

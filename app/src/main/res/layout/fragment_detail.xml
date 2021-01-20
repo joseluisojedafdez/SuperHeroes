@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/iv_hero_image_large"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/here_superhero_image_large"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -22,13 +22,12 @@
         android:id="@+id/tv_hero_name_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/hero_name_detail_here"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_hero_image_large" />
+        app:layout_constraintStart_toEndOf="@+id/iv_hero_image_large"
+        app:layout_constraintTop_toTopOf="@+id/iv_hero_image_large" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/detail_tabs"
@@ -42,8 +41,37 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hero_name_detail"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintTop_toBottomOf="@+id/tab_detail_hero" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_detail_hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_hero_image_large">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/tv_alingment_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/alingment_detail_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_hero_image_large"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hero_name_detail" />
+
+    <TextView
+        android:id="@+id/tv_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/publisher_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_hero_image_large"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alingment_detail" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

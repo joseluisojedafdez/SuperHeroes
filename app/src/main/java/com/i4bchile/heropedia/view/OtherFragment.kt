@@ -25,6 +25,9 @@ class OtherFragment(id:Int): Fragment() {
         binding= FragmentOtherBinding.inflate(layoutInflater)
         viewModel.getHero(superId).observe(viewLifecycleOwner, {
             binding.tvWorkValue.text=it.work.occupation
+            binding.tvBaseValue.text=it.work.base
+            binding.tvGroupAffilValue.text=it.connections.groupAffiliation
+            binding.tvRelativesValue.text=it.connections.relatives
         })
 
 
