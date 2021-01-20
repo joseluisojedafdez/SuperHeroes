@@ -7,9 +7,10 @@ import coil.load
 import com.i4bchile.heropedia.databinding.ItemListSuperheroBinding
 import com.i4bchile.heropedia.model.SuperHero
 
-class SuperAdapter: RecyclerView.Adapter<SuperVH>() {
+class SuperAdapter(val listener:OnItemClickListener): RecyclerView.Adapter<SuperVH>() {
 
     private val superList=mutableListOf<SuperHero>()
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperVH {
         val binding=ItemListSuperheroBinding.inflate(LayoutInflater.from(parent.context))
@@ -18,7 +19,12 @@ class SuperAdapter: RecyclerView.Adapter<SuperVH>() {
 
     override fun onBindViewHolder(holder: SuperVH, position: Int) {
         val superHero=superList[position]
+        holder.itemView.setOnClickListener{
+            listener.onClick(superHero.id)
+        }
         holder.bind(superHero)
+
+
     }
 
     override fun getItemCount(): Int {
