@@ -12,4 +12,24 @@
     <string name="other">Other</string>
     <string name="good_or_bad">Good or Bad</string>
     <string name="universe">Universe</string>
+    <string name="powstats">PowStats</string>
+    <string name="appearance">Appearance</string>
+    <string name="heigth">Heigth</string>
+    <string name="heigth_value">Heigth Value</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name_here">Full Name Here</string>
+    <string name="work">Work</string>
+    <string name="hero_work_here">Hero Work Here</string>
+    <string name="powerstats">POWERSTATS</string>
+    <string name="strength">Strength</string>
+    <string name="strength_value_here">Strength Value Here</string>
+    <string name="speed">Speed</string>
+    <string name="speed_value_here">Speed Value Here</string>
+    <string name="durability">Durability</string>
+    <string name="durability_value_here">Durability Value Here</string>
+    <string name="power">Power</string>
+    <string name="power_value_here">Power Value Here</string>
+    <string name="combat">Combat</string>
+    <string name="combat_value_here">Combat Value Here</string>
+
 </resources>

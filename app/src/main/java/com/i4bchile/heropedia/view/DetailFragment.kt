@@ -1,7 +1,6 @@
 package com.i4bchile.heropedia.view
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,12 +27,14 @@ class DetailFragment(id:Int): Fragment() {
             binding.tvHeroNameDetail.text=it.name
             binding.ivHeroImageLarge.load(it.images.md)
         })
-
-
-
-
-
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val detailAdapter=DetailAdapter(this,superId)
+        binding.detailTabs.adapter=detailAdapter
+
     }
 
 }

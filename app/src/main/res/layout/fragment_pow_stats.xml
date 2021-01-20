@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_light">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/powerstats"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_intelligence_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/intelligence"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tv_intelligence_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/intelligence_value"
+        app:layout_constraintStart_toEndOf="@+id/tv_intelligence_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_intelligence_label" />
+
+    <TextView
+        android:id="@+id/tv_strength_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/strength"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_intelligence_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intelligence_label" />
+
+    <TextView
+        android:id="@+id/tv_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/strength_value_here"
+        app:layout_constraintStart_toStartOf="@+id/tv_intelligence_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intelligence_value" />
+
+    <TextView
+        android:id="@+id/tv_speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/speed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_strength_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_strength_label" />
+
+    <TextView
+        android:id="@+id/tv_speed_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/speed_value_here"
+        app:layout_constraintStart_toStartOf="@+id/tv_strength"
+        app:layout_constraintTop_toBottomOf="@+id/tv_strength" />
+
+    <TextView
+        android:id="@+id/tv_durability_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/durability"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_speed_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_speed_label" />
+
+    <TextView
+        android:id="@+id/tv_durability_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/durability_value_here"
+        app:layout_constraintStart_toStartOf="@+id/tv_speed_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_speed_value" />
+
+    <TextView
+        android:id="@+id/tv_power_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/power"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_durability_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_durability_label" />
+
+    <TextView
+        android:id="@+id/tv_power_value"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/power_value_here"
+        app:layout_constraintStart_toStartOf="@+id/tv_durability_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_durability_value" />
+
+    <TextView
+        android:id="@+id/tv_combat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/combat"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_power_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_power_label" />
+
+    <TextView
+        android:id="@+id/tv_combat_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/combat_value_here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_power_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_power_value" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
