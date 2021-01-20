@@ -31,9 +31,9 @@
         android:id="@+id/tv_alter_egos_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold"
+        android:layout_marginTop="8dp"
         android:text="@string/alter_egos"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tv_full_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_full_name" />
 
@@ -41,7 +41,7 @@
         android:id="@+id/tv_alter_egos_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/alter_egos_here"
         app:layout_constraintStart_toStartOf="@+id/tv_full_name_value"
         app:layout_constraintTop_toBottomOf="@+id/tv_full_name_value" />
@@ -50,7 +50,7 @@
         android:id="@+id/tv_aliases"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/aliases"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tv_alter_egos_label"
@@ -60,22 +60,22 @@
         android:id="@+id/tv_aliases_value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/aliases_value_here"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_alter_egos_value"
-        app:layout_constraintTop_toBottomOf="@+id/tv_alter_egos_value" />
+        app:layout_constraintStart_toStartOf="@+id/tv_aliases"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aliases" />
 
     <TextView
         android:id="@+id/tv_place_of_birth_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="@string/born_in"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tv_aliases"
-        app:layout_constraintTop_toBottomOf="@+id/tv_aliases" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_aliases_value" />
 
     <TextView
         android:id="@+id/tv_place_of_birth_value"
