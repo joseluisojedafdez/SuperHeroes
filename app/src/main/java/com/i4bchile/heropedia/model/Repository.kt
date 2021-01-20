@@ -1,11 +1,13 @@
 package com.i4bchile.heropedia.model
 
+import androidx.lifecycle.LiveData
 
 
 class Repository{
 
     private val database=SuperApplication.superDatabase!!
     val superList= database.superDao().getAllSuper()
+
 
     suspend fun getSuperHeroesfromApi(){
 
@@ -21,6 +23,11 @@ class Repository{
             false-> {
             }
         }
+
+    }
+
+    fun getSuperHero(superId: Int):LiveData<SuperHero> {
+         return database.superDao().getSuper(superId)
 
     }
 }
