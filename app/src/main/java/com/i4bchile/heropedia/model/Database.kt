@@ -13,8 +13,8 @@ interface SuperDao{
     @Query("SELECT * FROM superhero")
     fun getAllSuper(): LiveData<List<SuperHero>>
 
-    //@Query("SELECT * FROM superhero WHERE id=:superId")
-    //fun getSuper(superId:Int)
+    @Query("SELECT * FROM superhero WHERE id=:superId")
+    fun getSuper(superId:Int):LiveData<SuperHero>
 
 }
 
