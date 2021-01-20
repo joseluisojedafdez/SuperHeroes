@@ -11,40 +11,23 @@
         android:id="@+id/iv_hero_image_large"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:contentDescription="@string/here_superhero_image_large"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/tv_label_intelligence"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/intelligence"
-        app:layout_constraintStart_toEndOf="@+id/iv_hero_image_large"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_intelligence_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/intelligence_value"
-        app:layout_constraintStart_toStartOf="@+id/tv_label_intelligence"
-        app:layout_constraintTop_toBottomOf="@+id/tv_label_intelligence" />
 
     <TextView
         android:id="@+id/tv_hero_name_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:text="@string/hero_name_detail_here"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:text="@string/hero_name_detail_here"
-        app:layout_constraintStart_toStartOf="@+id/iv_hero_image_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_hero_image_large" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

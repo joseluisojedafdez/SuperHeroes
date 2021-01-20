@@ -6,4 +6,8 @@
     <string name="intelligence">Intelligence</string>
     <string name="intelligence_value">Intelligence Value</string>
     <string name="hero_name_detail_here">Hero Name Detail Here</string>
+    <string name="powstat">PowStat</string>
+    <string name="appear">Appear</string>
+    <string name="bio">Bio</string>
+    <string name="other">Other</string>
 </resources>

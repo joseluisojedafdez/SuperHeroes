@@ -21,11 +21,11 @@ class DetailFragment(id:Int): Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        Log.d("DetailFragment", "onCreateView: idHero: $superId")
+
         binding= FragmentDetailBinding.inflate(layoutInflater)
+
         viewModel.getHero(superId).observe(viewLifecycleOwner,{
             binding.tvHeroNameDetail.text=it.name
-            binding.tvIntelligenceValue.text=it.powerstats.intelligence.toString()
             binding.ivHeroImageLarge.load(it.images.md)
         })
 
