@@ -25,7 +25,7 @@ class BioFragment(id:Int): Fragment() {
         viewModel.getHero(superId).observe(viewLifecycleOwner, {
             binding.tvFullNameValue.text=it.biography.fullName
             binding.tvAlterEgosValue.text=it.biography.alterEgos
-            binding.tvAliasesValue.text=it.biography.aliases.toString()
+            binding.tvAliasesValue.text=it.biography.aliases.joinToString()
             binding.tvFirstAppearanceValue.text=it.biography.firstAppearance
             binding.tvPlaceOfBirthValue.text=it.biography.placeOfBirth
         })
